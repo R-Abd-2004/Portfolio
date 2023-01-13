@@ -1,0 +1,230 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+/* Start Header  */
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    background-color: #DDD;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.header .container  img {
+    width: 100px;
+}
+.header .container  .addres {
+    padding-left: 20px;
+    color:#000;
+}
+.header .container   .addres h1 {
+    margin-bottom: 10px;
+}
+.header .container   .addres p {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/* End Header  */
+
+/* Start Nav  */
+nav .container {
+    padding: 0;
+}
+nav .container .bar {
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .container .bar a { 
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+    color: #000;
+}
+nav .container .bar a:hover{
+    color: #2eca7f;
+}
+/* End Nav  */
+
+/* Start Home  */
+.main-content .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #DDD;
+}
+.main-content .container .content-imag {
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+.main-content .container .content-imag img{
+    width: 100%;
+}
+.main-content .container .info {
+    padding: 30px;
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+.main-content .container .info h2 {
+    color: #000;
+    font-size: 24px;
+    letter-spacing: -1px;
+    font-weight: 900;
+    position: relative;
+}
+.main-content .container .info h2::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    width: 120px;
+    background-color: #727272;
+}
+.main-content .container .info h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 35px;
+    height: 7px;
+    width: 50px;
+    background-color: #727272;
+    border-radius: 10px;
+}
+.main-content .container .info p:first-of-type {
+    margin-top: 35px;
+    font-size: 16px;
+}
+.main-content .container .info p {
+    color: #000;
+    line-height: 1.4;
+    margin-top: 15px;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+    .main-content .container .content-imag {
+        display: none;
+    }
+}
+/* End Home  */
+
+/* Start portfolio  */
+.portfolio .container {
+    background-color: #FFF;
+    padding-bottom: 30px;
+}
+.portfolio .main-heading {
+    text-align: center;
+}
+.portfolio .main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.portfolio .portfolio-content{
+    display: flex;
+    justify-content: center;
+}   
+.portfolio .portfolio-content .card{
+    margin: 20px;
+    width: 300px;
+    height: 270px;
+}
+.portfolio .portfolio-content .card img{
+    width: 100%;
+    height: 168px;
+}
+.portfolio .portfolio-content .card .info {
+    padding: 5px;
+    text-align: center;
+}
+.portfolio .portfolio-content .card .info h3{
+    margin: 5px 0;
+}
+.portfolio .portfolio-content .card .info h3 a{
+    text-decoration: none;
+    color: black;
+}
+.portfolio .portfolio-content .info p {
+    color: #777;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .portfolio .portfolio-content{
+        display: flex;
+        flex-wrap: wrap;
+    }  
+
+}
+/* End  portfolio  */
+
+/* Start Footer  */
+.footer{
+    text-align: center;
+}
+.footer .container {
+    background-color: #DDD;
+    color: #000;
+    padding-bottom: 25px;
+}
+.footer .container p:not(.copyright){
+    font-size: 22px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 30px auto;
+    border-bottom: 1px solid #000;
+    width: fit-content;
+}
+.footer .container .social-icon a{
+    font-size: 25px;
+    color: #000;
+    padding: 10px 15px;
+}
+.footer .container .copyright {
+    margin-top: 60px;
+}
+/* End portfolio  */
